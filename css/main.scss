@@ -1,0 +1,22 @@
+---
+# Only the main Sass file needs front matter (the dashes are enough)
+---
+@charset "utf-8";
+
+// override the bootstrap brand-primary colour
+//$brand-primary: #f00;
+
+// import bootstrap
+@import "bootstrap";
+
+// define a colour based on a bootstrap colour
+//$my-gray: $gray;
+
+// remainder of sass goes here
+/*p {
+    color: my-gray;
+}*/
+
+body {
+  padding-top: 60px;
+}
