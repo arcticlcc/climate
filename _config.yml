@@ -11,3 +11,5 @@ github_username:  arctic-climate
 
 # Build settings
 markdown: kramdown
+sass:
+  style: compressed

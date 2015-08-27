@@ -1,11 +1,77 @@
 ---
-layout: page
+layout: default
 title: Gallery
 permalink: /gallery/
+gallery: true
 ---
 
-This is the base Jekyll theme. You can find out more info about customizing your Jekyll theme, as well as basic Jekyll usage documentation at [jekyllrb.com](http://jekyllrb.com/)
-
-You can find the source code for the Jekyll new theme at: [github.com/jglovier/jekyll-new](https://github.com/jglovier/jekyll-new)
-
-You can find the source code for Jekyll at [github.com/jekyll/jekyll](https://github.com/jekyll/jekyll)
+<div class="jumbotron">
+    <h2><span class="glyphicon glyphicon-camera" aria-hidden="true"></span> Photo Gallery </h2>
+    <p>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
+        veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+        commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
+        velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
+        occaecat cupidatat non proident, sunt in culpa qui officia deserunt
+        mollit anim id est laborum.
+    </p>
+</div>
+<div class="row">
+    {% for photo in site.data.photos %}
+    <div class="col-sm-4 col-md-3">
+        <div class="thumbnail {% cycle 'thb-success','thb-info','thb-warning','thb-danger' %}">
+            <img src="{{ photo.src }}" alt="...">
+            <div class="caption">
+                <h3 class="photo-label">{{ photo.label }}</h3>
+                <p>
+                    {{ photo.caption }}
+                </p>
+                <p>
+                    Photo by: {{ photo.credit }}
+                </p>
+                <p>
+                    <a href="{{ photo.src  | replace:'2', '7'}}" class="btn btn-primary" role="button">View Original</a>
+                </p>
+            </div>
+        </div>
+    </div>
+    {% endfor %}
+</div>
+<!-- Modal -->
+<div class="modal fade" id="galleryModal" tabindex="-1" role="dialog" aria-labelledby="galleryModalLabel">
+    <div class="modal-dialog modal-lg" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+                <h4 class="modal-title" id="galleryModalLabel">Modal title</h4>
+            </div>
+            <div class="modal-body">
+                <div id="carousel-gallery" class="carousel slide" data-ride="carousel" data-interval="false">
+                    <!-- Wrapper for slides -->
+                    <div class="carousel-inner" role="listbox">
+                        {% for photo in site.data.photos %}
+                        <div class="item {% if forloop.first %}active{% endif %}">
+                            <img class="thumbnail img-responsive center-block" src="{{ photo.src  | replace:'2', forloop.index}}" alt="{{ photo.label }}">
+                            <div class="carousel-caption">
+                                {{ photo.caption }}
+                                <a href="{{ photo.src  | replace:'2', forloop.index}}"> View Original</a>
+                            </div>
+                        </div>
+                        {% endfor %}
+                    </div>
+                    <!-- Controls -->
+                    <a class="left carousel-control" href="#carousel-gallery" role="button" data-slide="prev"> <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span> <span class="sr-only">Previous</span> </a>
+                    <a class="right carousel-control" href="#carousel-gallery" role="button" data-slide="next"> <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span> <span class="sr-only">Next</span> </a>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-success" data-dismiss="modal">
+                    Close
+                </button>
+            </div>
+        </div>
+    </div>
+</div>

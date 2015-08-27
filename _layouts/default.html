@@ -13,6 +13,32 @@
 
         {% include footer.html %}
 
+        <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+        <!-- Include all compiled plugins (below), or include individual files as needed -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.5/js/bootstrap.min.js"></script>
+        {% if page.gallery %}
+        <script type="text/javascript">
+          $(document).ready(function() {
+            $('.row .thumbnail img').click(function() {
+              var thb = $(this).parent('.thumbnail');
+              var idx = thb.parents('div').index();
+              var id = parseInt(idx);
+              // show the modal
+              $('#galleryModal').modal('show');
+              // slide carousel to selected
+              $('#carousel-gallery').carousel(id);
+              //set title
+              $('.modal-title').html(thb.find('h3.photo-label').text());
+            });
+
+            /* change modal title when slide changes */
+            $('#carousel-gallery').bind('slid.bs.carousel', function() {
+              $('.modal-title').html($(this).find('.active img').attr("alt"));
+            });
+          });
+        </script>
+        {% endif %}
     </body>
 
 </html>
