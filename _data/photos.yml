@@ -1,24 +1,134 @@
-- src: http://www.placebear.com/250/200
-  caption: Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-  label: Thumbnail 1
-  credit: Phil Martin
-- src: http://www.placekitten.com/250/200
-  caption: Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-  label: Thumbnail 2
-  credit: <a>Phil Martin</a>
-- src: http://www.placebear.com/250/200
-  caption: Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-  label: Thumbnail 3
-  credit: Phil Martin
-- src: http://www.placekitten.com/250/200
-  caption: Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-  label: Thumbnail 4
-  credit: Phil Martin
-- src: http://placebear.com/250/200
-  caption: Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-  label: Thumbnail 5
-  credit: Phil Martin
-- src: http://www.placekitten.com/250/200
-  caption: Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-  label: Thumbnail 6
-  credit: Phil Martin
+---
+-
+    src: 4774967298
+    label: Arctic Research
+    title: NASA ICESCAPE Mission 2010, data collecting in Chukchi Sea
+    credit: Kathryn Hansen, NASA
+    caption: 'NASA''s IceScape Mission researches deteriorating sea ice in a changing Arctic Ocean.'
+    origin_src: https://www.flickr.com/photos/nasahqphoto/4774967298/
+-
+    src: 8030864362
+    label: Coastal Erosion
+    title: Erosion along the Beaufort Sea coastline
+    credit: ShoreZone
+    caption: "Can you spot the structure?\nIn addition to flooding communities, storm surge and sea-level rise are expected to increase flooding of low-lying areas often used for fishing and hunting."
+    origin_src: https://www.flickr.com/photos/shorezone/8030864362/
+-
+    src: 19906876719
+    label: Fire
+    title: Salmon River Fire, Kobuk Valley National Park, 2015
+    credit: Bureau of Land Management, Alaska Fire Service
+    caption: 3.1 million acres of forest land have burned in Alaska in 2015, second only to 2004.
+    origin_src: https://www.flickr.com/photos/alaskanps/19906876719/
+-
+    src: 19900697695
+    label: Fire
+    title: Moose Creek Fire, Denali National Park 2015
+    credit: Yasunori Matsui, National Park Service
+    caption: Frequency and intensity of wildfires in Alaska are expected to increase.
+    origin_src: https://www.flickr.com/photos/alaskanps/19900697695/
+-
+    src: 8679479824
+    label: Fisheries
+    title: Salmon in Bear Creek
+    credit: Caz VanDevere, USFWS Alaska
+    caption: "Climate-induced changes like warming streams, and low flows pose threats to Alaskan salmon, \na vital species for Alaskans."
+    origin_src: https://www.flickr.com/photos/usfws_alaska/8679479824/
+-
+    src: 19352157551
+    label: Hydrology
+    title: National Petroleum Reserve in Alaska
+    credit: Bob Wick, Bureau of Land Management
+    caption: Alaska’s myriad of lakes and streams are vulnerable to changes in the water cycle and thawing of permafrost which keeps water near the surface.
+    origin_src: https://www.flickr.com/photos/mypubliclands/19352157551
+-
+    src: 10960980923
+    label: Hydrology
+    title: Guyot glacier, Jan 2010
+    credit: 'Shad O''Neel, U.S. Geological Survey'
+    caption: "Guyot Glacier near Yakutat has retreated \n50 km in the last century."
+    origin_src: https://www.flickr.com/photos/usgeologicalsurvey/10960980923/
+-
+    src: 11471418433
+    label: Infrastructure
+    title: Kivalina, a village facing coastal erosion
+    credit: ShoreZone
+    caption: "As coastlines erode and sea levels rise, some Alaskan communities must decide to defend against the encroaching ocean or relocate."
+    origin_src: https://www.flickr.com/photos/shorezone/11471418433/
+-
+    src: 5165200832
+    label: Marine Mammals
+    title: A male polar bear walks on pack ice near the open water
+    credit: Eric Regehr, U.S. Fish & Wildlife Service
+    caption: As arctic ice disappears, so does polar bear habitat.
+    origin_src: https://www.flickr.com/photos/usfws_alaska/5165200832/
+-
+    src: 19590417550
+    label: Marine Mammals
+    title: Humpback whale straining krill, SE Alaska
+    credit: NOAA
+    caption: Alaska has seen unprecedented death counts of the treasured humpback whale this year.
+    origin_src: https://www.flickr.com/photos/noaaphotolib/19590417550/
+-
+    src: 3831748025
+    label: Ocean Acidification
+    title: Child measuring a crab in Alaska
+    credit: Isaac Wedin, Creative Commons
+    caption: Scientists fear ocean acidification could drive the collapse of Alaska’s iconic crab fishery.
+    origin_src: https://www.flickr.com/photos/izik/3831748025/
+-
+    src: 12116729705
+    label: Permafrost
+    title: Arctic Coastal Plain in the Teshekpuk Lake Special Area of the National Petroleum Reserve
+    credit: Brandt Meixell, U.S. Geological Survey
+    caption: "Rapid erosion on Arctic coasts causing permafrost to thaw often results in massive ice breaks along bluffs."
+    origin_src: https://www.flickr.com/photos/usgeologicalsurvey/12116729705/
+-
+    src: 11205434213
+    label: Sea Ice
+    title: USGS Walrus Research Team, tracking the movement of walrus on St. Lawrence Island
+    credit: U.S. Geological Survey
+    caption: Late freeze, early melts, and reduced sea ice extent disrupt traditional harvest of walrus and other marine mammals. Wildlife distributions change, and travel becomes less predictable and more dangerous for hunters.
+    origin_src: https://www.flickr.com/photos/usgeologicalsurvey/11205434213/
+-
+    src: 100
+    label: Smart Development
+    title: Pipelines, Deadhorse
+    credit: ShoreZone
+    caption: In Alaska, we have an opportunity to shape future development to provide for the wellbeing of humans and ecosystems.
+    origin_src: http://www.shorezone.org/
+-
+    src: 11244256764
+    label: Subsistence
+    title: Salmon in Alaska
+    credit: U.S. Fish & Wildlife Service Alaska
+    caption: Traditional lifestyles, as well as a commercial catch of over $700mn annually, are threatened by rising water temperatures and other climate change related factors.
+    origin_src: https://www.flickr.com/photos/usfws_alaska/11244256764/
+-
+    src: 8489058337
+    label: Subsistence
+    title: Harvesting berries at Camp Sivu near Kobuk Valley National Park
+    credit: Western Arctic National Parklands
+    caption: 'Food and families: Climate fluctuations, expected to become more extreme, affect berry quality and quantity.'
+    origin_src: https://www.flickr.com/photos/nps_wear/8489058337/
+-
+    src: 8516188391
+    label: Subsistence
+    title: A herd of caribou swim across Noatak River
+    credit: Western Arctic National Parklands
+    caption: Caribou herds can be hundreds of thousands of animals strong, migrate hundreds of miles, and are an important resource for subsistence economies.  Increasing fires reduce availability of caribou’s main winter food, lichen.
+    origin_src: https://www.flickr.com/photos/nps_wear/8516188391/
+-
+    src: 200
+    label: Weather & Climate
+    title: Log lines on Tigvariak Island, east of Prudhoe Bay
+    credit: ShoreZone
+    caption: Daily high tides are marked by log lines (red arrows), while a pile of driftwood on the tundra is evidence of a large storm (single red arrow). With decreased sea ice and the increasing likelihood of large storm events, there is an increased threat from flooding to infrastructure and coastal wetlands.
+    origin_src: http://www.shorezone.org/
+-
+    src: 300
+    label: Wetland Drying & Wildlife
+    title: Alaska’s Yukon-Kuskokwim Delta, an emperor goose nesting island
+    credit: U.S. Fish & Wildlife Service
+    caption: Climate change is drying Arctic ponds and lakes, which is expected to impact breeding areas from important wetland species.
+    origin_src: http://www.fws.gov/news/blog/index.cfm/2011/6/30/Alaska-Across-the-Wildest-State-Climate-Change-Threatens-Many-Species-and-Habitats

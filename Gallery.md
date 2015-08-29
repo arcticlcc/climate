@@ -3,6 +3,7 @@ layout: default
 title: Gallery
 permalink: /gallery/
 gallery: true
+fullbase: http://data.arcticlcc.org/climate/
 ---
 
 <div class="jumbotron">
@@ -15,27 +16,30 @@ gallery: true
         credit the source when using them.
     </p>
 </div>
-<div class="row">
+
+<div class="gallery row">
     {% for photo in site.data.photos %}
-    <div class="col-sm-4 col-md-3">
-        <div class="thumbnail {% cycle 'thb-success','thb-info','thb-warning','thb-danger' %}">
-            <img src="{{ photo.src }}" alt="...">
-            <div class="caption">
-                <h3 class="photo-label">{{ photo.label }}</h3>
-                <p>
-                    {{ photo.caption }}
-                </p>
-                <p>
-                    Photo by: {{ photo.credit }}
-                </p>
-                <p>
-                    <a href="{{ photo.src  | replace:'2', '7'}}" class="btn btn-primary" role="button">View Original</a>
-                </p>
+    {% assign mod = forloop.index | modulo:4 %}
+        <div class="col-sm-4 col-md-3">
+            <div class="thumbnail {% cycle 'thb-success','thb-info','thb-warning','thb-danger' %}">
+                <img src="{{ site.baseurl }}/images/gallery/250/arctic_climate_{{ photo.src }}_250.jpg" alt="{{ photo.title }}" title="{{ photo.title }}" />
+                <div class="caption">
+                    <h3 class="photo-label">{{ photo.label }}</h3>
+                    <p>
+                        {{ photo.caption }}
+                    </p>
+                    <p class="photo-credit">
+                        <small>Photo by: <a href="{{ photo.origin_src }}">{{ photo.credit }}</a></small>
+                    </p>
+                    <p>
+                        <a href="{{ page.fullbase }}arctic_climate_{{ photo.src }}.jpg" class="btn btn-primary" role="button">View Original</a>
+                    </p>
+                </div>
             </div>
         </div>
-    </div>
     {% endfor %}
 </div>
+
 <!-- Modal -->
 <div class="modal fade" id="galleryModal" tabindex="-1" role="dialog" aria-labelledby="galleryModalLabel">
     <div class="modal-dialog modal-lg" role="document">
@@ -52,10 +56,12 @@ gallery: true
                     <div class="carousel-inner" role="listbox">
                         {% for photo in site.data.photos %}
                         <div class="item {% if forloop.first %}active{% endif %}">
-                            <img class="thumbnail img-responsive center-block" src="{{ photo.src  | replace:'2', forloop.index}}" alt="{{ photo.label }}">
-                            <div class="carousel-caption">
+                            <img class="thumbnail img-responsive center-block" src="{{ site.baseurl }}/images/gallery/1024/arctic_climate_{{ photo.src }}_1024.jpg" alt="{{ photo.title }}" title="{{ photo.title }}">
+                            <div class="carousel-caption hidden-xs">
                                 {{ photo.caption }}
-                                <a href="{{ photo.src  | replace:'2', forloop.index}}"> View Original</a>
+                                <br/>
+                                <a href="{{ page.fullbase }}arctic_climate_{{ photo.src }}.jpg">
+                                View Original</a>
                             </div>
                         </div>
                         {% endfor %}
