@@ -29,7 +29,8 @@
               // slide carousel to selected
               $('#carousel-gallery').carousel(id);
               //set title
-              $('.modal-title').html(thb.find('h3.photo-label').text());
+              //$('.modal-title').html(thb.find('h3.photo-label').text());
+              $('.modal-title').html($(this).attr("alt"));
             });
 
             /* change modal title when slide changes */
